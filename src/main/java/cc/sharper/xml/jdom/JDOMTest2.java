@@ -37,6 +37,7 @@ public class JDOMTest2
                 Book book1 = new Book();
                 String id =  book.getAttributeValue("id");//获取自己的特有属性值
                 System.out.println(id);
+                book.getAttributeValue("id");
 
                 //循环获取自身属性
                 for (Attribute attribute : book.getAttributes())

@@ -35,11 +35,14 @@ public class SaxTest1
                 System.out.println(book.getLanguage());
                 System.out.println("----finish----");
             }
-        } catch (ParserConfigurationException e) {
+        } catch (ParserConfigurationException e)
+        {
             e.printStackTrace();
-        } catch (SAXException e) {
+        } catch (SAXException e)
+        {
             e.printStackTrace();
-        } catch (IOException e) {
+        } catch (IOException e)
+        {
             e.printStackTrace();
         }
     }
