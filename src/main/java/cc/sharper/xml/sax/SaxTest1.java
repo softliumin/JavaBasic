@@ -22,7 +22,9 @@ public class SaxTest1
             SAXParser parser = factory.newSAXParser();
             SAXParserHandler handler = new SAXParserHandler();
             parser.parse("src/main/java/Book.xml", handler);
+
             System.out.println("" + handler.getBookList().size() + "");
+
             for (Book book : handler.getBookList())
             {
                 System.out.println(book.getId());
@@ -34,13 +36,10 @@ public class SaxTest1
                 System.out.println("----finish----");
             }
         } catch (ParserConfigurationException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (SAXException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
